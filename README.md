@@ -32,7 +32,9 @@ After block 900000 there is a fixed PoS reward of 0.25 NETKO, adding 43800 NETKO
 
 - Forum: https://bitcointalk.org/index.php?topic=1810858
 
-- Chain state/ Bootstrap.dat : http://pc.cd/b0a
+- Chain state/ Bootstrap.dat :  (PCloud: http://pc.cd/b0a )
+
+- Chain state/ Bootstrap.dat : (MS OneDrive: https://1drv.ms/u/s!AklKAv1s6c88fYxPDVDIRzbiZCQ?e=MSnDFW )
 
 - Twitter: https://twitter.com/netkocoin
 
