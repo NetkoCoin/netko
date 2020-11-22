@@ -1,6 +1,8 @@
-The Cryptocurrency NETKO is a project by a Slovenian IT company netko.it
+The Cryptocurrency NETKO is a project started by a Slovenian IT company netko.it
 
 At first the NETKO coin will be used as a loyalty token for our existing and future customers and later we might integrate other services using NETKOs blockchain. We decided to open the coin for mining to everyone so the coin will have a good standing reputation.
+
+Netko is now fully community driven open source project.
 
 Name: NETKO
 
@@ -42,7 +44,7 @@ After block 900000 there is a fixed PoS reward of 0.25 NETKO, adding 43800 NETKO
 
 - Facebook: https://www.facebook.com/NetkoCoin/
 
-- Telegram: https://t.me/BlockmasterSi
+- Telegram: https://t.me/NetkoCoin
 
 - CoinmarketCap: https://coinmarketcap.com/currencies/netko/
 
@@ -50,6 +52,6 @@ After block 900000 there is a fixed PoS reward of 0.25 NETKO, adding 43800 NETKO
 
 - Blockexplorer: https://chainz.cryptoid.info/netko/
 
-- Reddit: https://www.reddit.com/r/BlockmasterSi
+- Reddit: https://www.reddit.com/r/Netko/
 
 - Mobile wallet for android: https://play.google.com/store/apps/details?id=com.cryptowallet.si
