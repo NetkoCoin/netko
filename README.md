@@ -30,13 +30,15 @@ Total in this phase: 25,534,140 NETKO
 
 After block 900000 there is a fixed PoS reward of 0.25 NETKO, adding 43800 NETKO to the supply per year.
 
-## Get in touch or stay updated:
-
-- Forum: https://bitcointalk.org/index.php?topic=1810858
+## Bootstrap files / chain state
 
 - Chain state/ Bootstrap.dat :  (PCloud: http://pc.cd/b0a )
 
 - Chain state/ Bootstrap.dat : (MS OneDrive: https://1drv.ms/u/s!AklKAv1s6c88fYxPDVDIRzbiZCQ?e=MSnDFW )
+
+## Get in touch or stay updated:
+
+- Forum: https://bitcointalk.org/index.php?topic=1810858
 
 - Twitter: https://twitter.com/netkocoin
 
