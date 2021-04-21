@@ -56,4 +56,8 @@ After block 900000 there is a fixed PoS reward of 0.25 NETKO, adding 43800 NETKO
 
 - Reddit: https://www.reddit.com/r/Netko/
 
-- Mobile wallet for android: https://play.google.com/store/apps/details?id=com.cryptowallet.si
+## Netko markets
+
+- Bololex.com
+- Unnamed.exchange
+- FreiExchange.com
