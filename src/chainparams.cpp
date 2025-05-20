@@ -84,10 +84,10 @@ public:
         assert(hashGenesisBlock == uint256("0x00000b1677bc31fdf9d92f0781896022289464b4a31a3576a486390b86ace531"));
         assert(genesis.hashMerkleRoot == uint256("0xb869fd250564a1c7bc1961c4585b056f8f0920ec638a5c237ef9b4b68e1d9b58"));
 
-        vSeeds.push_back(CDNSSeedData("netko.tech", "node1.netko.tech"));
-        vSeeds.push_back(CDNSSeedData("netko.tech", "node2.netko.tech"));
-        vSeeds.push_back(CDNSSeedData("netko.tech", "node3.netko.tech"));
-        vSeeds.push_back(CDNSSeedData("netko.tech", "node4.netko.tech"));
+        vSeeds.push_back(CDNSSeedData("netko.net, "node1.netko.net"));
+        vSeeds.push_back(CDNSSeedData("netko.net", "node2.netko.net"));
+        vSeeds.push_back(CDNSSeedData("netko.net", "node3.netko.net"));
+        vSeeds.push_back(CDNSSeedData("netko.net", "node4.netko.net"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,53);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
