@@ -42,11 +42,10 @@ After block 900000 there is a fixed PoS reward of 0.25 NETKO, adding 43800 NETKO
 
 - Twitter: https://twitter.com/netkocoin
 
-- Web: https://netko.tech
+- Web: https://netko.net
 
 - Facebook: https://www.facebook.com/NetkoCoin/
 
-- Telegram: https://t.me/NetkoCoin
 
 - CoinmarketCap: https://coinmarketcap.com/currencies/netko/
 
@@ -54,10 +53,6 @@ After block 900000 there is a fixed PoS reward of 0.25 NETKO, adding 43800 NETKO
 
 - Blockexplorer: https://chainz.cryptoid.info/netko/
 
-- Reddit: https://www.reddit.com/r/Netko/
 
 ## Netko markets
 
-- Bololex.com
-- Unnamed.exchange
-- FreiExchange.com
