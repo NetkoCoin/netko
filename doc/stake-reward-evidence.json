@@ -1,0 +1,149 @@
+{
+  "recorded_at_utc": "2026-11-18T16:26:09.448391+00:00",
+  "baseline_revision": "69d813fea6e3865b9d2622108c74d5f67dc27343",
+  "original_pr_revision": "ac14536b86e25fd7e4d8ca9c9a0a1d0c4aacfec8",
+  "tested_source_sha256": {
+    "src/main.cpp": "cdc4a6d7bc5dd45bcc623656908caaddcfe78121550f78d13a9442875b640f13",
+    "src/chainparams.cpp": "634a7ab267956a1ee5de700450743b3297ca6f0a7e5d89f99fb7167541b06f48",
+    "contrib/test_stake_reward.py": "c144fd6f8ccb8949426af1afab42d95624ca32027eeefc3c6799dbc3b7226278",
+    "contrib/test_stake_reward_logging.py": "16b46deeeeb681debea5ec86b478b108e2365bdcb2cc4b0d10dd9b3f7b119b1f",
+    "contrib/stake_reward/connectblock_regression.cpp": "aa8e90ee9d899aa46c0d625e2b88126d63106e748bd660ec2536f4ae57e67f03",
+    "contrib/stake_reward/run_integration.py": "2341470e906da1ad8cc0316cb79ee26a5200ef032f38691806e0b96798683788",
+    "contrib/stake_reward/build_network.py": "6a3a82a0ce2dc829dfcc272077bba55070f55098bc065b46633ca1f7ffc0475f",
+    "contrib/stake_reward/run_network.py": "c868b3d337f33cf475f83d1dc42f3eb4d7b105e00b4c2a36cf2f01d108e0e82b"
+  },
+  "environment": {
+    "os": "Ubuntu 24.04",
+    "compiler": "GCC 13.3",
+    "boost": "1.83",
+    "openssl": "existing private 1.0",
+    "berkeley_db": "5.3"
+  },
+  "checks": {
+    "arithmetic": {
+      "result": "PASS",
+      "cases": 54
+    },
+    "logging_format": {
+      "result": "PASS",
+      "cases": 2,
+      "original_format_negative_control": "expected failure"
+    },
+    "wallet_enabled_build": {
+      "result": "PASS",
+      "sha256": "c00c5227de47c65cad299e0ea69edf790bd7d0ea28f71d6ad15acc2265b4d121"
+    },
+    "production_height_integration": {
+      "result": "PASS",
+      "trials": [
+        {
+          "binary": "baseline",
+          "expectations": "baseline",
+          "creation_logging": false,
+          "exit": 0,
+          "expected_exit": 0
+        },
+        {
+          "binary": "patched",
+          "expectations": "patched",
+          "creation_logging": false,
+          "exit": 0,
+          "expected_exit": 0
+        },
+        {
+          "binary": "baseline",
+          "expectations": "patched",
+          "creation_logging": false,
+          "exit": 1,
+          "expected_exit": 1
+        },
+        {
+          "binary": "patched",
+          "expectations": "patched",
+          "creation_logging": true,
+          "exit": 0,
+          "expected_exit": 0
+        }
+      ],
+      "normal_run_wallet_trials": 3,
+      "normal_run_explicit_connectblock_trials": 8
+    }
+  },
+  "private_network": {
+    "result": "PASS",
+    "test_only": true,
+    "production_boundary": 900000,
+    "accelerated_boundary": 110,
+    "genesis": "218d932966c127b715093e504b7f7cb221d788cec0ec5d4603f2ebe20bb2ef55",
+    "pow_blocks_mined": 109,
+    "creation_logging_on_patched_nodes": true,
+    "boundary_blocks": [
+      {
+        "height": 110,
+        "hash": "d6ee4b4d5dc88d76baf7da6db42bba5255c116541fe507b3b562a623125145b1",
+        "mint": 25.0,
+        "flags": "proof-of-stake stake-modifier"
+      },
+      {
+        "height": 111,
+        "hash": "ae2ff1a6be458d74c36f76f6b162ae6c3163665069f2047a493197406f6df19c",
+        "mint": 0.25,
+        "flags": "proof-of-stake"
+      },
+      {
+        "height": 112,
+        "hash": "b38f0d02cb011a280b65538ff058d58f185f19befd7e2402027fd625e77d6c77",
+        "mint": 0.25,
+        "flags": "proof-of-stake"
+      }
+    ],
+    "final_nodes": [
+      {
+        "name": "producer",
+        "height": 113,
+        "besthash": "c471d8051498a56faa7cac52720b1b6c92f46463a7fc0a35660b72d2e68e1766"
+      },
+      {
+        "name": "observer",
+        "height": 113,
+        "besthash": "c471d8051498a56faa7cac52720b1b6c92f46463a7fc0a35660b72d2e68e1766"
+      },
+      {
+        "name": "old-validator",
+        "height": 110,
+        "besthash": "d6ee4b4d5dc88d76baf7da6db42bba5255c116541fe507b3b562a623125145b1"
+      },
+      {
+        "name": "extra-peer",
+        "height": 113,
+        "besthash": "c471d8051498a56faa7cac52720b1b6c92f46463a7fc0a35660b72d2e68e1766"
+      }
+    ],
+    "restart_resync": {
+      "height": 113,
+      "hash": "c471d8051498a56faa7cac52720b1b6c92f46463a7fc0a35660b72d2e68e1766"
+    },
+    "old_validator_rejection": "coinstake pays too much(actual=25000000 vs calculated=0)",
+    "loopback_peers_and_listeners_verified": true,
+    "clean_exit_codes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "final_test_pids_absent": true,
+    "result_sha256": "a5744755af937971267e01e2ff0400f9fec3d759625ecc1e99e24ee79b57716f"
+  },
+  "ci": {
+    "github_workflows": 0,
+    "manual_verification_only": true
+  },
+  "not_verified": [
+    "full mainnet history replay",
+    "competing-branch reorg",
+    "GUI/other-platform release binaries",
+    "public-peer upgrade adoption",
+    "public chain continuation"
+  ],
+  "authorization_boundary": "PR update only; no merge, release, production deployment or real-wallet operation"
+}

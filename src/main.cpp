@@ -1013,9 +1013,9 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees, int nHeight)
     if (nHeight <= 900000)
        nSubsidy = 25 * COIN;
     else
-       nSubsidy = 25 / 100 * COIN;
+       nSubsidy = 25 * COIN / 100; // Multiply first to preserve the 0.25 coin subsidy.
 
-    LogPrint("creation", "GetProofOfStakeReward(): create=%s nCoinAge=%d\n", FormatMoney(nSubsidy), nCoinAge, nHeight);
+    LogPrint("creation", "GetProofOfStakeReward(): create=%s nCoinAge=%d nHeight=%d\n", FormatMoney(nSubsidy), nCoinAge, nHeight);
 
     return nSubsidy + nFees;
 }
